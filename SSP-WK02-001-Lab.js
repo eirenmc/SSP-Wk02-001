@@ -17,7 +17,9 @@ fs.readdir("./", function(err, files) {
 				
 				console.log("Contents of " + files[i] + data); 
 				c++;
-
+				
+				if ( c == files.length -1)
+					console.log("I have completed")
 			});
 		}
 	}
